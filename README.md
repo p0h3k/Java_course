@@ -2,6 +2,10 @@
 #### Задача №1
 Сделай простейшее приложение с выводом Hello World.
 
+Компиляция - `javac src/main/java/ru/sgu/HelloWorld.java`
+
+Запуск - `java -cp src/main/java/ ru.sgu.HelloWorld`
+
 #### Задача №2
 На вход поступают два больших вещественных числа в форме строки. И тип операции ADD, SUB, MULT, DIV, REM, POW. Сложение, вычитание, умножение, деление, остаток после деления, возведение в степень.
 
@@ -22,6 +26,9 @@
 -1.0000000000000000
 1024
 ```
+Компиляция  - `javac src/main/java/ru/sgu/Calc.java`
+
+Запуск - `java -cp src/main/java/ ru.sgu.Calc`
 
 #### Задача №3
 Ввод/вывод из файла.
@@ -62,3 +69,6 @@ Alex A.A.
 Анна Н.В.
 ```
 
+Компиляция - `javac src/main/java/ru/sgu/FileWorker.java`
+
+Запуск - `java -cp src/main/java/ ru.sgu.FileWorker`
