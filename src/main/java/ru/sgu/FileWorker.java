@@ -4,12 +4,20 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.PrintWriter;
 import java.io.IOException;
+import java.io.File;
 
 public class FileWorker {
     public static void main(String[] args) {
         String inputFileName = "input.txt";
         String outputFileName = "output.txt";
         String regex = "^[A-Za-zА-Яа-я].*";
+
+	File inputFile = new File(inputFileName);
+
+        if (!inputFile.exists()) {
+            System.err.println("Файл '" + inputFileName + "' не найден.");
+            return; 
+        }
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFileName));
              PrintWriter writer = new PrintWriter(outputFileName)) {

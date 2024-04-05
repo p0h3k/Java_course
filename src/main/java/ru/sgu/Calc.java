@@ -12,7 +12,7 @@ public class Calc {
             String[] input = scanner.nextLine().split(" ");
             
             if (input.length != 3) {
-                System.out.println("Ошибка: введено больше трех параметров.");
+                System.out.println("Ошибка: введено не три параметра.");
                 return;
             }
             
