@@ -8,7 +8,7 @@ import java.util.TreeSet;
 public class StockReader {
     public static void main(String[] args) {
         Set<StockEntry> entries = new TreeSet<>(); 
-        try (Scanner scanner = new Scanner(new File("input.txt"))) { 
+        try (Scanner scanner = new Scanner(new File("data/input.txt"))) { 
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 String[] data = line.split(" ", 4); 
