@@ -58,5 +58,6 @@ passport -> 3.md5
 ```
 
 Сборка `javac src/main/java/ru/sgu/DirectoryArchiver.java`
-Запуск `java -cp src/main/java ru.sgu.DirectoryArchiver directory passport`
+
+Запуск `java -cp src/main/java ru.sgu.DirectoryArchiver <путь до директории>  <целевая строка>`
 
