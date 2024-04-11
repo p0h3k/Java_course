@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class StockReader {
+public class StockEntryProcessor {
     public static void main(String[] args) {
         Set<StockEntry> entries = new TreeSet<>(); 
         try (Scanner scanner = new Scanner(new File("data/input.txt"))) { 

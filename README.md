@@ -15,9 +15,9 @@
 
 Данные берутся из файла input.txt, который лежит в папке data в корне проекта.
 
-Сборка `javac src/main/java/ru/sgu/StockReader.java src/main/java/ru/sgu/StockEntry.java`
+Сборка `javac src/main/java/ru/sgu/StockEntryProcessor.java src/main/java/ru/sgu/StockEntry.java`
 
-Запуск `java -cp src/main/java ru.sgu.StockReader`
+Запуск `java -cp src/main/java ru.sgu.StockEntryProcessor`
 
 
 #### Задача 2
