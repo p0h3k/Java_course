@@ -15,3 +15,12 @@
 
 Запуск - `java -cp src/main/java ru.sgu.Fibonacci`
 
+
+#### Задача 3
+Есть продюсер, который кладет данные в очередь (название еды + число килокалорий).
+
+Есть несколько потребителей, которые забирают данные из очереди. При заборе потребитель выводит, какой товар он только что съел, и сколько килокалорий суммарно он употребил.
+
+Сборка - `javac src/main/java/ru/sgu/Consumer.java src/main/java/ru/sgu/FoodItem.java src/main/java/ru/sgu/Producer.java src/main/java/ru/sgu/FoodProductionSimulation.java`
+
+Запуск - `java -cp src/main/java ru.sgu.FoodProductionSimulation`
