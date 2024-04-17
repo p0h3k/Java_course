@@ -1,24 +1,36 @@
-## Курс по Java
-#### Описание
-Репозиторий содержит решение заданий по курсу java программирование. 
-Всего на курсе предполагается 7 заданий, которые разбиты на задачи.
+## Задача 2
+#### Подзадача 1
+Выбери объект из реального мира и реализуй его в в виде класса (ООП). У него будут поля (хранимые состояния) и методы (регулирующие поведение объекта).
 
-Решение каждого задания содержится в своей ветке, ветка содержит решения отдельных задач.
 
-#### Java version 
-Версия Java 
+Класс реализует интерфейсы (прилагательные, которыми можно описать объект) и от него наследуются классы, расширяющие поведение объекта.
+
+Т.е. сделай свой класс, который расширяет другой твой класс, в котором реализуется один из твоих интерфейсов.
+
+Пример
 
 ```
-openjdk 11.0.22 2024-01-16
-OpenJDK Runtime Environment (build 11.0.22+7-post-Ubuntu-0ubuntu220.04.1)
-OpenJDK 64-Bit Server VM (build 11.0.22+7-post-Ubuntu-0ubuntu220.04.1, mixed mode, sharing)
+interface 2DFigure {getPerimeter(); getSquare();}
+
+abstract class AbstractFigure {abstract String getNameOfFigure();}
+
+class Line extends AbstractFigure implements 2DFigure
+class Circle extends AbstractFigure implements 2DFigure
+class Triangle extends AbstractFigure implements 2DFigure
+class Rectangle extends AbstractFigure implements 2DFigure
 ```
 
-#### Требования 
-Начальные пакеты всегда + все задачи в пакете ru.sgu
+#### Подзадача 2
+В своем классе реализуй методы equals(), hashCode(), compareTo(), toString(), поверхностной и глубокой копии. Разберись, зачем они нужны.
 
-#### Сборка и запуск 
-Сборка и запуск производятся в корневой директории проекта
-Сборка - `javac src/main/java/ru/sgu/Calc.java`
 
-Запуск - `java -cp src/main/java/ ru.sgu.Calc`
+#### Подзадача 3
+Продемонстрируй работу полиморфизма на реализованных классах. В моем примере классы Line, Circle, Rectangle, Triangle должны реализовать методы getPerimeter() и getSquare() для подсчета периметра и площади соответственно.
+
+Соответственно, если я сложу их в контейнер List<2DFigure> list и для каждого элемента figure вызову figure.getPerimeter() и figure.getSquare(), я получу разные результаты
+
+
+Сборка - ``
+
+Запуск - ``
+
