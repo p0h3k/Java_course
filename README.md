@@ -30,7 +30,7 @@ class Rectangle extends AbstractFigure implements 2DFigure
 Соответственно, если я сложу их в контейнер List<2DFigure> list и для каждого элемента figure вызову figure.getPerimeter() и figure.getSquare(), я получу разные результаты
 
 
-Сборка - ``
+Сборка - `javac src/main/java/ru/sgu/Teapot.java src/main/java/ru/sgu/TeapotInterface.java src/main/java/ru/sgu/ElectricTeapot.java src/main/java/ru/sgu/Main.java`
 
-Запуск - ``
+Запуск - `java -cp src/main/java/ ru.sgu.Main`
 
