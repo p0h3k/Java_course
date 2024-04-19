@@ -1,6 +1,8 @@
 package ru.sgu;
 
-public class ElectricTeapot extends Teapot {
+import java.util.Objects;
+
+public class ElectricTeapot extends AbstractTeapot {
     private int power; // Мощность в Ваттах
 
     public ElectricTeapot(int volume, String color, int power) {
@@ -17,7 +19,21 @@ public class ElectricTeapot extends Teapot {
     public String toString() {
         return super.toString() + ", мощность=" + power + " Ватт";
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (!super.equals(obj)) return false;
+        if (!(obj instanceof ElectricTeapot)) return false;
+        ElectricTeapot other = (ElectricTeapot) obj;
+        return this.power == other.power;
+    }
+
+    @Override
+    public int hashCode() {
+        return 31 * power + super.hashCode();
+    }
+
     public ElectricTeapot copy() {
- 	return new ElectricTeapot(this.volume, new String(this.color), this.power);
+        return new ElectricTeapot(this.volume, this.color, this.power);
     }
 }

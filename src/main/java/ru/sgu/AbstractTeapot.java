@@ -1,16 +1,14 @@
 package ru.sgu;
 
-public abstract class Teapot implements TeapotInterface, Comparable<Teapot> {
+public abstract class AbstractTeapot implements TeapotInterface, Comparable<AbstractTeapot> {
     protected int volume;
     protected String color;
 
-    public Teapot(int volume, String color) {
+    public AbstractTeapot(int volume, String color) {
         this.volume = volume;
         this.color = color;
     }
 
-    @Override
-    public abstract void boilWater();
 
     @Override
     public String toString() {
@@ -21,20 +19,24 @@ public abstract class Teapot implements TeapotInterface, Comparable<Teapot> {
     }
 
     @Override
-    public int compareTo(Teapot other) {
-        return Integer.compare(this.volume, other.volume);
+    public int compareTo(AbstractTeapot other) {
+        int volumeComparison = Integer.compare(this.volume, other.volume);
+        if (volumeComparison != 0) {
+            return volumeComparison;
+        }
+        return this.color.compareTo(other.color);
     }
 
     @Override
     public int hashCode() {
-        return volume * color.hashCode();
+        return 31 * volume + color.hashCode();
     }
 
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
-        if (!(obj instanceof Teapot)) return false;
-        Teapot other = (Teapot) obj;
+        if (!(obj instanceof AbstractTeapot)) return false;
+        AbstractTeapot other = (AbstractTeapot) obj;
         return volume == other.volume && color.equals(other.color);
     }
 }
