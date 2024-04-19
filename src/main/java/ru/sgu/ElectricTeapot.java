@@ -24,13 +24,17 @@ public class ElectricTeapot extends AbstractTeapot {
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (!(obj instanceof ElectricTeapot)) return false;
-        if (!super.equals(obj)) return false; 
         ElectricTeapot other = (ElectricTeapot) obj;
-        return power == other.power;
-}
+        return this.volume == other.volume && 
+               this.color.equals(other.color) && 
+               this.power == other.power;
+    }
     @Override
     public int hashCode() {
-        return 31 * super.hashCode() + power;
+        int result = Integer.hashCode(volume);  
+        result = 31 * result + color.hashCode();  
+        result = 31 * result + Integer.hashCode(power); 
+        return result;
     }
 
     public ElectricTeapot copy() {
