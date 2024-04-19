@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         ElectricTeapot teapot1 = new ElectricTeapot(1000, "черный", 1500);
         ElectricTeapot teapot2 = new ElectricTeapot(1500, "белый", 1800);
-        ElectricTeapot teapot3 = new ElectricTeapot(1000, "черный", 1700);
+        ElectricTeapot teapot3 = new ElectricTeapot(1200, "черный", 1500);
 	ElectricTeapot teapot4 = new ElectricTeapot(1000, "черный", 1500);
 
         System.out.println(teapot1);

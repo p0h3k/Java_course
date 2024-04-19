@@ -22,15 +22,15 @@ public class ElectricTeapot extends AbstractTeapot {
 
     @Override
     public boolean equals(Object obj) {
-        if (!super.equals(obj)) return false;
+        if (this == obj) return true;
         if (!(obj instanceof ElectricTeapot)) return false;
+        if (!super.equals(obj)) return false; 
         ElectricTeapot other = (ElectricTeapot) obj;
-        return this.power == other.power;
-    }
-
+        return power == other.power;
+}
     @Override
     public int hashCode() {
-        return 31 * power + super.hashCode();
+        return 31 * super.hashCode() + power;
     }
 
     public ElectricTeapot copy() {
