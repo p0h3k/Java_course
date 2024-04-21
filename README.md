@@ -8,3 +8,12 @@
 Сборка - `javac src/main/java/ru/sgu/StreamFilter.java`
 
 Запуск - `java -cp src/main/java/ ru.sgu.StreamFilter`
+
+
+#### Задача 2
+На вход поступает массив из n (n <= 1000000) целочисленных чисел. Пользователь сам вводит эти числа.  Найди в нем второе наибольшее и третье наименьшие числа. Сделай решение через стримы. Выведи ошибку, если пользователь ввел не число
+
+
+Сборка - `javac src/main/java/ru/sgu/FindArrayElement.java`
+
+Запуск - `java -cp src/main/java ru.sgu.FindArrayElement`
