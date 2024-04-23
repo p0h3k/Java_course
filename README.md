@@ -17,3 +17,11 @@
 Сборка - `javac src/main/java/ru/sgu/FindArrayElement.java`
 
 Запуск - `java -cp src/main/java ru.sgu.FindArrayElement`
+
+
+#### Задача 3 
+Реализуй  паттернов проектирования программирования Мультитон.
+
+Сборка - `javac src/main/java/ru/sgu/Main.java src/main/java/ru/sgu/Printer.java`
+
+Запуск - `java -cp src/main/java ru.sgu.Main`
