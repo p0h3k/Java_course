@@ -36,3 +36,17 @@ wednesday
 Сборка - `javac src/main/java/ru/sgu/DayOfWeek.java src/main/java/ru/sgu/DayOfWeekCalculator.java`
 
 Запуск - `java -cp src/main/java/ ru.sgu.DayOfWeekCalculator`
+
+
+
+#### Задача 3
+В конец строки 100 000 раз дописывается строчка, состоящая из 10 рандомных символов. При каждой записи строчка из 10 символов генерируется заново.
+
+Выбери из существующих классов java.lang.* такую реализацию строки, которая будет наиболее оптимальной для использования в таком алгоритме. 
+
+Докажи, что она будет быстрее.
+
+
+Сборка - `javac src/main/java/ru/sgu/StringAppendBenchmark.java`
+
+Запуск - `java -cp src/main/java/ ru.sgu.StringAppendBenchmark`
