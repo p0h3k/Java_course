@@ -33,7 +33,6 @@ public class DateCalculator {
         System.out.println("Число дней между минимальной и максимальной датой: " + daysBetween);
     }
 
-    // Метод для парсинга даты из строки
     private static LocalDate parseDate(String dateStr) {
         try {
             String[] parts = dateStr.split("\\s+");
